@@ -1,0 +1,171 @@
+<div class="row">
+            <div class="col-xl-4">
+              <div class="Info-tech-management_sidebar">
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="assets/images/brand-logo/brand-logo-3.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <p class="card-desc text-center">أهلا بك</p>
+                  <h5 class="card-name text-center">
+                    عبد العزيز عبدالله منصور القبضي
+                  </h5>
+
+                  <ul class="list-unstyled p-0 m-0">
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-envelope"></i>
+
+                        الرسائل
+                        <span class="badge badge-danger">2</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-clipboard"></i>
+                        المهام
+                        <span class="badge badge-danger">44</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-cog"></i>
+                        الخدمات الإلكترونية
+                        <span class="badge badge-danger">8</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-chart-pie"></i>
+                        الطلبات
+                        <span class="badge badge-danger">23</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-8">
+              <div class="info-tech-management_content">
+                <div class="row">
+                  <div class="col-12">
+                    <!-- Tabs -->
+                    <div class="devlogs-tabs">
+                      <ul id="tabs" class="tabs list-unstyled p-0 m-0">
+                        <li>
+                          <a data-tab="tab-1" href="#" class="active"
+                            >عن إدارة تقنية المعلومات</a
+                          >
+                        </li>
+                        <li>
+                          <a data-tab="tab-2" href="#">كلمة مدير الإدارة</a>
+                        </li>
+                        <li>
+                          <a data-tab="tab-3" href="#">المهام والواجبات</a>
+                        </li>
+                      </ul>
+
+                      <!-- Tabs Content -->
+                      <!-- Tab 1 -->
+                      <div
+                        id="tab-1"
+                        class="
+                          tab-content
+                          animate__animated animate__fadeIn
+                          active
+                        "
+                      >
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title">
+                              1 عن إدارة تقنية المعلومات
+                            </h4>
+                            <div class="card-text">
+                              امنت القوات البرية منذ البداية بأهمية توفير شبكات
+                              حاسب ألي تسهل عمل إدارتها المختلفة فعملت على توفير
+                              الكادر المؤهل في هذا المجال و أستمرت جهودها
+                              المتواصلة عن تأسيس إدارة متخصصة بمسمى "إدارة
+                              الحاسب الألي للقوات البرية " امنت القوات البرية
+                              منذ البداية بأهمية توفير شبكات حاسب ألي تسهل عمل
+                              إدارتها المختلفة فعملت على توفير الكادر المؤهل في
+                              هذا المجال و أستمرت جهودها المتواصلة عن تأسيس
+                              إدارة متخصصة بمسمى "إدارة الحاسب الألي للقوات
+                              البرية "
+
+                              <a href="#" class="read-more-link">...المزيد</a>
+                            </div>
+                          </div>
+                          <div class="card-img">
+                            <img src="assets/images/logo.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Tab 2 -->
+                      <div
+                        id="tab-2"
+                        class="tab-content animate__animated animate__fadeIn"
+                      >
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title">
+                              2 عن إدارة تقنية المعلومات
+                            </h4>
+                            <div class="card-text">
+                              امنت القوات البرية منذ البداية بأهمية توفير شبكات
+                              حاسب ألي تسهل عمل إدارتها المختلفة فعملت على توفير
+                              الكادر المؤهل في هذا المجال و أستمرت جهودها
+                              المتواصلة عن تأسيس إدارة متخصصة بمسمى "إدارة
+                              الحاسب الألي للقوات البرية " امنت القوات البرية
+                              منذ البداية بأهمية توفير شبكات حاسب ألي تسهل عمل
+                              إدارتها المختلفة فعملت على توفير الكادر المؤهل في
+                              هذا المجال و أستمرت جهودها المتواصلة عن تأسيس
+                              إدارة متخصصة بمسمى "إدارة الحاسب الألي للقوات
+                              البرية "
+
+                              <a href="#" class="read-more-link">...المزيد</a>
+                            </div>
+                          </div>
+                          <div class="card-img">
+                            <img src="assets/images/logo.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Tab 3 -->
+                      <div
+                        id="tab-3"
+                        class="tab-content animate__animated animate__fadeIn"
+                      >
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title">
+                              3 عن إدارة تقنية المعلومات
+                            </h4>
+                            <div class="card-text">
+                              امنت القوات البرية منذ البداية بأهمية توفير شبكات
+                              حاسب ألي تسهل عمل إدارتها المختلفة فعملت على توفير
+                              الكادر المؤهل في هذا المجال و أستمرت جهودها
+                              المتواصلة عن تأسيس إدارة متخصصة بمسمى "إدارة
+                              الحاسب الألي للقوات البرية " امنت القوات البرية
+                              منذ البداية بأهمية توفير شبكات حاسب ألي تسهل عمل
+                              إدارتها المختلفة فعملت على توفير الكادر المؤهل في
+                              هذا المجال و أستمرت جهودها المتواصلة عن تأسيس
+                              إدارة متخصصة بمسمى "إدارة الحاسب الألي للقوات
+                              البرية "
+
+                              <a href="#" class="read-more-link">...المزيد</a>
+                            </div>
+                          </div>
+                          <div class="card-img">
+                            <img src="assets/images/logo.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
