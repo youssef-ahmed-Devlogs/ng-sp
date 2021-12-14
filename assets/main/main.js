@@ -325,3 +325,40 @@ document.addEventListener("DOMContentLoaded", () => {
     $(".notification-content").fadeToggle();
   });
 });
+
+// POPUP BANNER
+if (document.querySelector(".popup-banner") !== null) {
+  const popupBanner = document.querySelector(".popup-banner");
+  const closeBanner = document.querySelector(".popup-banner_close");
+  const closeBanner2 = document.querySelector(".popup-banner_close2");
+
+  window.addEventListener("DOMContentLoaded", () => {
+    popupBanner.style.display = "block";
+    closeBanner.addEventListener(
+      "click",
+      () => (popupBanner.style.display = "none")
+    );
+    closeBanner2.addEventListener(
+      "click",
+      () => (popupBanner.style.display = "none")
+    );
+  });
+}
+
+// animate__shakeX
+// noti-serv
+
+window.addEventListener("scroll", () => {
+  const featuresAreaSection = document.querySelector(".features-area-section");
+  const bells = featuresAreaSection.querySelectorAll(".noti-serv");
+
+  if (window.scrollY >= featuresAreaSection.scrollHeight + 200) {
+    bells.forEach((bell) =>
+      bell.classList.add("animate__swing", "animate__repeat-3")
+    );
+  } else {
+    bells.forEach((bell) =>
+      bell.classList.remove("animate__swing", "animate__repeat-3")
+    );
+  }
+});
