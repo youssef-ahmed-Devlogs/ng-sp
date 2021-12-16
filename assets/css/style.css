@@ -3734,9 +3734,9 @@ button.tm-videobutton:hover span {
 }
 
 .slider-navigation-row a {
-  transition: 0.4s ease-in-out;
-  padding: 30px 15px !important;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.05) !important;
+  /* transition: 0.4s ease-in-out; */
+  /* padding: 30px 15px !important; */
+  /* box-shadow: 0 0 3px rgba(0, 0, 0, 0.05) !important; */
   border: none;
 }
 

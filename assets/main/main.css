@@ -1392,3 +1392,7 @@ body {
   background-color: rgb(255, 67, 67);
   border-radius: 50%;
 }
+
+.cur-pointer {
+  cursor: pointer;
+}
