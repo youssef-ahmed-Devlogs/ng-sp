@@ -2,6 +2,23 @@ const userList = document.querySelector(".user-list");
 const userArea = document.querySelector(".user-area");
 const userAreaContent = document.querySelector(".user-area-content");
 
+document.addEventListener("click", (e) => {
+  if (
+    !e.target.classList.contains("user-list") &&
+    !e.target.classList.contains("user-area") &&
+    !e.target.classList.contains("user-area-content") &&
+    !e.target.classList.contains("user-profile") &&
+    !e.target.classList.contains("user-profile-name") &&
+    !e.target.classList.contains("user-area-content-centred") &&
+    !e.target.classList.contains("user-links") &&
+    !e.target.classList.contains("user-profile-img") &&
+    !e.target.classList.contains("next-slide")
+  ) {
+    userAreaContent.classList.remove("active");
+    userList.classList.remove("active");
+  }
+});
+
 userArea.addEventListener("click", () => {
   if (userAreaContent.classList.contains("active")) {
     userAreaContent.classList.remove("active");
@@ -167,12 +184,27 @@ const sr = ScrollReveal({
 ScrollReveal().reveal(".slider-navigation .swiper-slide", { interval: 200 });
 
 // Let me help you sidebar
+
 const sideToggleBtn = document.querySelector(".let-me-help-you .toggle-btn");
+const parent = sideToggleBtn.parentElement;
 const sideClose = document.querySelector(".let-me-help-you .close-side");
 let sideOpen = false;
 
+document.onclick = function (e) {
+  if (
+    !e.target.classList.contains("let-me-help-you") &&
+    !e.target.classList.contains("toggle-btn") &&
+    !e.target.classList.contains("let-me-help-you-row") &&
+    !e.target.classList.contains("next-slide")
+  ) {
+    if (sideOpen) {
+      parent.style.left = `-${parent.clientWidth}px`;
+      sideOpen = false;
+    }
+  }
+};
+
 sideToggleBtn.addEventListener("click", () => {
-  const parent = sideToggleBtn.parentElement;
   if (sideOpen) {
     parent.style.left = `-${parent.clientWidth}px`;
     sideOpen = false;
@@ -323,6 +355,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   $(".notification-btn").on("click", () => {
     $(".notification-content").fadeToggle();
+    userAreaContent.classList.remove("active");
+    userList.classList.remove("active");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (
+      !e.target.classList.contains("notification-btn") &&
+      !e.target.classList.contains("notification-content") &&
+      !e.target.classList.contains("noti-item") &&
+      !e.target.classList.contains("next-slide")
+    ) {
+      $(".notification-content").fadeOut();
+    }
   });
 });
 
