@@ -1389,10 +1389,56 @@ body {
   align-items: center;
   justify-content: center;
   color: #fff;
-  background-color: rgb(255, 67, 67);
+  background-color: #ff4343;
   border-radius: 50%;
 }
 
 .cur-pointer {
   cursor: pointer;
+}
+
+.cards-table-title {
+  font-size: 18px;
+  margin: 0;
+  padding: 7px;
+  background-color: #f1f1f1;
+}
+
+.cards-table .card-table {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.cards-table .card-table:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+.cards-table .card-table-item {
+  flex: 1;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cards-table .card-table-item_val {
+  color: #9d7d24;
+}
+
+.table-title {
+  font-size: 18px;
+  color: #ff4343;
+  margin: 40px 0 20px;
+}
+
+.table-title a {
+  color: #9d7d24;
+}
+
+.threeTables .table thead th {
+  border: none;
+  background-color: #f1f1f1;
+}
+
+.threeTables .table tbody tr:nth-child(even) {
+  background-color: #f1f1f1;
 }
