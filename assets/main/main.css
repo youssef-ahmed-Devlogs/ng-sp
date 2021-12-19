@@ -379,6 +379,16 @@ body {
   background-color: #4dc247;
 }
 
+.icon-eye-sys {
+  background-color: #9d7d24;
+}
+
+.icon-fz-zoomin,
+.icon-fz-zoomout {
+  background-color: #f1f1f1;
+  color: #444 !important;
+}
+
 .breadcrumb {
   background: none;
 }

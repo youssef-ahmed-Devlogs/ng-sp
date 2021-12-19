@@ -394,16 +394,70 @@ if (document.querySelector(".popup-banner") !== null) {
 // noti-serv
 
 window.addEventListener("scroll", () => {
-  const featuresAreaSection = document.querySelector(".features-area-section");
-  const bells = featuresAreaSection.querySelectorAll(".noti-serv");
+  if (document.querySelector(".features-area-section") !== null) {
+    const featuresAreaSection = document.querySelector(
+      ".features-area-section"
+    );
+    const bells = featuresAreaSection.querySelectorAll(".noti-serv");
 
-  if (window.scrollY >= featuresAreaSection.scrollHeight + 200) {
-    bells.forEach((bell) =>
-      bell.classList.add("animate__swing", "animate__repeat-3")
-    );
-  } else {
-    bells.forEach((bell) =>
-      bell.classList.remove("animate__swing", "animate__repeat-3")
-    );
+    if (window.scrollY >= featuresAreaSection.scrollHeight + 200) {
+      bells.forEach((bell) =>
+        bell.classList.add("animate__swing", "animate__repeat-3")
+      );
+    } else {
+      bells.forEach((bell) =>
+        bell.classList.remove("animate__swing", "animate__repeat-3")
+      );
+    }
   }
+});
+
+// Icon Eye System Button Event
+$(".icon-eye-sys").on("click", function () {
+  const icon = document.querySelector(".icon-eye-sys i");
+
+  if (icon.classList.contains("fa-low-vision")) {
+    icon.classList.remove("fa-low-vision");
+    $("html").css("filter", "grayscale(0)");
+  } else {
+    icon.classList.add("fa-low-vision");
+    $("html").css("filter", "grayscale(100)");
+  }
+});
+
+// Icon Font Size Zoom System Button Event
+let zoomin = 0;
+$(".icon-fz-zoomin").on("click", function () {
+  if (zoomin < 1) {
+    zoomin++;
+
+    const allElements = document.body.querySelectorAll(
+      "p, h1,h2,h3,h4,h5,h6, a, button"
+    );
+    allElements.forEach((el) => {
+      const fz = window
+        .getComputedStyle(el, null)
+        .getPropertyValue("font-size");
+      const fzNum = parseFloat(fz);
+
+      el.style.fontSize = `${fzNum + 3}px`;
+    });
+  }
+
+  $(".icon-fz-zoomout").on("click", function () {
+    if (zoomin > 0) {
+      const allElements = document.body.querySelectorAll(
+        "p, h1,h2,h3,h4,h5,h6, a, button"
+      );
+      allElements.forEach((el) => {
+        const fz = window
+          .getComputedStyle(el, null)
+          .getPropertyValue("font-size");
+        const fzNum = parseFloat(fz);
+
+        el.style.fontSize = `${fzNum - 3}px`;
+      });
+      zoomin--;
+    }
+  });
 });
