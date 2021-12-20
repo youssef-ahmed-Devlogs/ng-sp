@@ -461,3 +461,47 @@ $(".icon-fz-zoomin").on("click", function () {
     }
   });
 });
+
+// ======================================================================================================================
+
+// Copy Page Link
+
+if (document.querySelector(".copy-link") !== null) {
+  const copyLink = document.querySelector(".copy-link");
+  const pageLink = document.getElementById("page-link");
+
+  copyLink.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    pageLink.value = window.location.href;
+    pageLink.select();
+    document.execCommand("Copy");
+  });
+}
+
+// Qr Code
+
+if (document.querySelector(".qr-code-btn") !== null) {
+  const qrCode = document.querySelector(".qr-code-btn");
+  const qrCodeWarapper = document.querySelector(".qr-code-warapper");
+  const closeQrCode = document.querySelector(".qr-code-warapper .close-icon");
+
+  qrCode.addEventListener("click", (e) => {
+    e.preventDefault();
+    qrCodeWarapper.style.display = "flex";
+
+    closeQrCode.addEventListener(
+      "click",
+      () => (qrCodeWarapper.style.display = "none")
+    );
+  });
+}
+
+// Print Page
+if (document.querySelector(".ToolPrintPage") !== null) {
+  const printBtn = document.querySelector(".ToolPrintPage");
+  printBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    print();
+  });
+}

@@ -379,8 +379,22 @@
               >
                 ادوات الصفحة
               </button>
+
+              <div class="qr-code-warapper">
+                <div class="text-center">
+                  <h3>قم بمسح الكود بالجوال</h3>
+                  <img src="assets/images/qrcode.png" alt="qrcode" />
+                  <span class="close-icon">
+                    إغلاق
+                    <i class="fas fa-times-circle"></i>
+                  </span>
+                </div>
+              </div>
+
+              <input type="text" id="page-link" />
+
               <div
-                class="dropdown-menu"
+                class="dropdown-menu tools-menu"
                 aria-labelledby="dropdownMenuButton"
                 x-placement="bottom-start"
                 style="
@@ -391,19 +405,18 @@
                   transform: translate3d(0px, 42px, 0px);
                 "
               >
-                <a class="dropdown-item ToolCopuURL" href="#"
-                  ><i class="fas fa-link"></i> نسخ الرابط</a
-                ><a class="dropdown-item ToolAddToFav" href="#"
-                  ><i class="fas fa-star"></i> إلى المفضلة</a
-                ><a
-                  class="dropdown-item"
-                  href="#"
-                  data-toggle="modal"
-                  data-target="#Report"
-                  ><i class="fas fa-hand-point-right"></i> ابلاغ</a
-                ><a class="dropdown-item ToolQRCode" href="#"
-                  ><i class="fas fa-qrcode"></i> QRCode</a
-                >
+                <a class="dropdown-item ToolCopuURL copy-link" href="#">
+                  <i class="fas fa-link"></i>
+                  نسخ الرابط
+                </a>
+                <a class="dropdown-item ToolPrintPage" href="#">
+                  <i class="fas fa-print"></i>
+                  طباعة
+                </a>
+                <a class="dropdown-item ToolQRCode qr-code-btn" href="#">
+                  <i class="fas fa-qrcode"></i>
+                  QRCode
+                </a>
               </div>
             </div>
           </div>
